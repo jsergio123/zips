@@ -33,9 +33,13 @@ class TheVideoResolver(ResolveUrl):
         self.headers = {'User-Agent': common.SMR_USER_AGENT}
 
     def get_media_url(self, host, media_id):
-        result = self.__check_auth(media_id)
-        if not result:
-            result = self.__auth_ip(media_id)
+        try:
+            result = self.__check_auth(media_id)
+            if not result:
+                result = self.__auth_ip(media_id)
+        except ResolverError:
+            raise
+
         if 'vt' in result:
             vt = result['vt']
             del result['vt']
