@@ -419,7 +419,11 @@ class MetaData:
                 meta['title'] = name
                 if str(show.rating) != '' and show.rating is not None:
                     meta['rating'] = float(show.rating)
-                meta['duration'] = int(show.runtime) * 60
+                # "Soft Focus with Jena Friedman" had an empty runtime, killing metadata routines
+                if str(show.runtime) != '':
+                    meta['duration'] = int(show.runtime) * 60
+                else:
+                    meta['duration'] = 99999 
                 meta['plot'] = show.overview
                 meta['mpaa'] = show.content_rating
                 meta['premiered'] = str(show.first_aired)

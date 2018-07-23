@@ -2,6 +2,7 @@ Version 1.0.6jb (jasonbuechler's update)
 - Adult Swim site update required regex adjustment
 - fixed: json response moved some elements around
 - disabled get-metadata by default to very lazily avoid bug: metahandler.py, line 422, in _get_tvdb_meta -- ValueError: invalid literal for int() with base 10: ''
+- update: just kidding -- fixed metadata collection (catch empty show.runtime) and re-enabled the default setting
 
 Version 1.0.6
 - Code cosmetics
