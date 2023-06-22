@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.jsergio" name="jsergio repo" version="1.0.6" provider-name="jsergio">
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.7" provider-name="jsergio">
 	<extension point="xbmc.addon.repository">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.gz</info>
+			<info>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.gz</info>
 			<checksum verify="sha256">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.gz.sha256</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
 			<artdir>https://raw.githubusercontent.com/jsergio123/zips/master/</artdir>
