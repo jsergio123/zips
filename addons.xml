@@ -93,16 +93,23 @@
         <website>https://beautifier.io/</website>
     </extension>
 </addon>
-<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.6" provider-name="jsergio">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum verify="sha256">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.sha256</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+			<artdir>https://raw.githubusercontent.com/jsergio123/zips/master/</artdir>
+			<hashes>sha256</hashes>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
+		<summary lang="en_US">Repo for jsergio Add-ons</summary>
+		<description lang="en_US">Repo for jsergio Add-ons</description>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
 </addons>
